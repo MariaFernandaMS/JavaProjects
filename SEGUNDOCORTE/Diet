@@ -1,0 +1,37 @@
+interface Diet {
+    int getCalorias();
+    String getTipoDeDieta();
+}
+
+// Implementar la clase Diet
+
+class DietaSaludable implements Diet {
+    private int calorias;
+    private String tipoDeDieta;
+
+    public DietaSaludable(int calorias, String tipoDeDieta) {
+        this.calories = calorias;
+        this.tipoDeDieta = tipoDeDieta;
+    }
+
+    // Implementación del método getCalories
+    @Override
+    public int getCalorias() {
+        return calorias;
+    }
+
+    @Override
+    public String getTipoDeDieta() {
+        return TipoDeDieta;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        DietaSaludable dietaSaludable = new DietaSaludable(500, "Vegetariano");
+
+        System.out.println("Calorías: " + dietaSaludable.getCalorias());
+        System.out.println("Tipo de dieta: " + dietaSaludable.gettipoDeDieta());
+    }
+}
